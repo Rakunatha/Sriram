@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI in Administrative Tribunals Survey</title>
+    <title>Blockchain Land Registry Survey</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
         * {
@@ -16,7 +16,7 @@
 ```
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+        background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 50%, #4a7c59 100%);
         padding: 20px;
         min-height: 100vh;
     }
@@ -26,25 +26,25 @@
         margin: 0 auto;
         background: white;
         border-radius: 12px;
-        box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.4);
         overflow: hidden;
     }
 
     .header {
-        background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+        background: linear-gradient(135deg, #1a472a 0%, #4a7c59 100%);
         color: white;
         padding: 40px;
         text-align: center;
     }
 
     .header h1 {
-        font-size: 28px;
+        font-size: 26px;
         margin-bottom: 10px;
         line-height: 1.3;
     }
 
     .header p {
-        font-size: 16px;
+        font-size: 15px;
         opacity: 0.95;
         margin-top: 10px;
     }
@@ -54,15 +54,16 @@
     }
 
     .info-box {
-        background: #e0f2f1;
-        border-left: 4px solid #00695c;
+        background: #e8f5e9;
+        border-left: 4px solid #2e7d32;
         padding: 15px;
         margin-bottom: 30px;
         border-radius: 4px;
+        font-size: 14px;
     }
 
     .definition-box {
-        background: #fff9c4;
+        background: #fff8e1;
         border-left: 4px solid #f57f17;
         padding: 15px;
         margin-bottom: 25px;
@@ -86,7 +87,7 @@
     }
 
     .section-number {
-        background: #134e5e;
+        background: #1a472a;
         color: white;
         width: 35px;
         height: 35px;
@@ -109,8 +110,7 @@
         color: #333;
     }
 
-    .form-group select,
-    .form-group input {
+    .form-group select {
         width: 100%;
         padding: 12px;
         border: 2px solid #ddd;
@@ -119,10 +119,9 @@
         transition: border-color 0.3s;
     }
 
-    .form-group select:focus,
-    .form-group input:focus {
+    .form-group select:focus {
         outline: none;
-        border-color: #134e5e;
+        border-color: #1a472a;
     }
 
     .question-box {
@@ -130,7 +129,7 @@
         padding: 25px;
         margin-bottom: 25px;
         border-radius: 8px;
-        border-left: 4px solid #71b280;
+        border-left: 4px solid #4a7c59;
     }
 
     .question-text {
@@ -158,7 +157,7 @@
     }
 
     .radio-option:hover {
-        background: #e0f2f1;
+        background: #e8f5e9;
     }
 
     .radio-option input[type="radio"] {
@@ -166,11 +165,11 @@
         height: 18px;
         margin-right: 12px;
         cursor: pointer;
-        accent-color: #134e5e;
+        accent-color: #1a472a;
     }
 
     .submit-btn {
-        background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+        background: linear-gradient(135deg, #1a472a 0%, #4a7c59 100%);
         color: white;
         padding: 15px 40px;
         border: none;
@@ -229,7 +228,7 @@
 
     .total-responses {
         font-size: 20px;
-        color: #134e5e;
+        color: #1a472a;
         font-weight: bold;
         margin-top: 10px;
     }
@@ -251,7 +250,7 @@
     }
 
     .clear-btn {
-        background: #134e5e;
+        background: #1a472a;
         color: white;
         padding: 12px 30px;
         border: none;
@@ -263,7 +262,7 @@
     }
 
     .clear-btn:hover {
-        background: #0d3a47;
+        background: #0f2a18;
     }
 
     .error {
@@ -280,20 +279,19 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>AI in Administrative Tribunals</h1>
-            <p>A Study on Efficiency vs Due Process</p>
+            <h1>Blockchain-Enabled Land Registries</h1>
+            <p>A Study on Transparent Property Rights: Legal, Technological, and Governance Implications</p>
         </div>
 
 ```
     <div id="formScreen" class="content">
         <div class="info-box">
-            <strong>Note:</strong> This survey examines public opinion on the use of artificial intelligence in administrative tribunals. 
-            Your responses will help understand perspectives on balancing efficiency gains with due process protections. All responses are anonymous.
+            <strong>Survey Purpose:</strong> This research examines perspectives on using blockchain technology for land registration systems. Your responses will help understand opinions on transparency, security, and governance of property rights through distributed ledger technology. All responses are anonymous.
         </div>
 
         <div class="definition-box">
-            <strong>Administrative Tribunals:</strong>
-            Specialized quasi-judicial bodies that adjudicate disputes in areas like taxation, labor, immigration, social security, consumer protection, and regulatory matters. They are distinct from regular courts and handle a high volume of cases.
+            <strong>Blockchain Land Registry:</strong>
+            A decentralized digital ledger system that records property ownership and transactions in an immutable, transparent, and tamper-proof manner. Unlike traditional paper-based or centralized digital registries, blockchain creates a permanent, verifiable record accessible to authorized parties.
         </div>
 
         <div class="section-title">
@@ -329,10 +327,12 @@
             <label>Occupation *</label>
             <select id="occupation">
                 <option value="">Select occupation</option>
-                <option value="Legal Professional">Legal Professional (Lawyer/Judge/Advocate)</option>
-                <option value="Government Employee">Government Employee</option>
-                <option value="Administrative Officer">Administrative Officer</option>
-                <option value="AI/Tech Professional">AI/Tech Professional</option>
+                <option value="Real Estate Professional">Real Estate Professional</option>
+                <option value="Legal Professional">Legal Professional (Lawyer/Advocate)</option>
+                <option value="Government/Public Administration">Government/Public Administration</option>
+                <option value="Blockchain/Tech Professional">Blockchain/Tech Professional</option>
+                <option value="Land Revenue Officer">Land Revenue Officer</option>
+                <option value="Property Developer">Property Developer</option>
                 <option value="Academic/Researcher">Academic/Researcher</option>
                 <option value="Business Professional">Business Professional</option>
                 <option value="Student">Student</option>
@@ -348,25 +348,25 @@
                 <option value="Bachelor's Degree">Bachelor's Degree</option>
                 <option value="Master's Degree">Master's Degree</option>
                 <option value="Doctorate/Ph.D.">Doctorate/Ph.D.</option>
-                <option value="Professional Degree">Professional Degree (Law/Medical)</option>
+                <option value="Professional Degree">Professional Degree (Law/Engineering)</option>
                 <option value="Other">Other</option>
             </select>
         </div>
 
         <div class="form-group">
-            <label>Have you ever been involved in an administrative tribunal proceeding? *</label>
-            <select id="tribunalExperience">
+            <label>Have you owned or purchased property? *</label>
+            <select id="propertyExperience">
                 <option value="">Select experience</option>
-                <option value="Yes, as a party">Yes, as a party to the case</option>
-                <option value="Yes, as a legal representative">Yes, as a legal representative</option>
-                <option value="Yes, as a tribunal member">Yes, as a tribunal member</option>
-                <option value="Yes, in other capacity">Yes, in another capacity</option>
-                <option value="No">No, never been involved</option>
+                <option value="Yes, currently own property">Yes, currently own property</option>
+                <option value="Yes, have purchased property in the past">Yes, have purchased property in the past</option>
+                <option value="Planning to purchase soon">Planning to purchase soon</option>
+                <option value="No, never owned property">No, never owned property</option>
+                <option value="Inherited property">Inherited property</option>
             </select>
         </div>
 
         <div class="section-title" style="margin-top: 40px;">
-            <div class="section-number" style="background: #71b280;">2</div>
+            <div class="section-number" style="background: #4a7c59;">2</div>
             <span>Survey Questions</span>
         </div>
 
@@ -376,7 +376,7 @@
     </div>
 
     <div id="thankYouScreen" class="thank-you-screen hidden">
-        <svg class="check-icon" fill="none" stroke="#134e5e" viewBox="0 0 24 24">
+        <svg class="check-icon" fill="none" stroke="#1a472a" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <h2>Thank You for Your Response!</h2>
@@ -390,7 +390,7 @@
         <div class="content">
             <div class="results-header">
                 <h2>Survey Results</h2>
-                <p style="color: #666;">Analysis on AI in Administrative Tribunals</p>
+                <p style="color: #666;">Analysis on Blockchain Land Registry Systems</p>
                 <div class="total-responses" id="totalResponses"></div>
             </div>
             <div id="chartsContainer"></div>
@@ -405,82 +405,82 @@
     const questions = [
         {
             id: 'q1',
-            text: 'How familiar are you with the role and functioning of administrative tribunals?',
+            text: 'How familiar are you with blockchain technology?',
             options: ['Very familiar', 'Somewhat familiar', 'Neutral', 'Not very familiar', 'Not familiar at all']
         },
         {
             id: 'q2',
-            text: 'Are you satisfied with the current efficiency of administrative tribunals in resolving cases?',
+            text: 'Are you satisfied with the current land registration system in your country/region?',
             options: ['Very satisfied', 'Satisfied', 'Neutral', 'Dissatisfied', 'Very dissatisfied']
         },
         {
             id: 'q3',
-            text: 'Should AI be used to assist in administrative tribunal decision-making?',
+            text: 'Should blockchain technology be implemented in land registries?',
             options: ['Strongly agree', 'Agree', 'Neutral', 'Disagree', 'Strongly disagree']
         },
         {
             id: 'q4',
-            text: 'How effective do you think AI would be in reducing case backlogs in administrative tribunals?',
+            text: 'How effective would blockchain be in reducing land fraud and property disputes?',
             options: ['Extremely effective', 'Very effective', 'Moderately effective', 'Slightly effective', 'Not effective']
         },
         {
             id: 'q5',
-            text: 'Would AI implementation improve the speed of administrative justice?',
+            text: 'Would blockchain improve transparency in property ownership records?',
             options: ['Significantly improve', 'Somewhat improve', 'No change', 'Somewhat worsen', 'Significantly worsen']
         },
         {
             id: 'q6',
-            text: 'How concerned are you about AI compromising due process rights in tribunal proceedings?',
+            text: 'How concerned are you about data privacy in blockchain-based land registries?',
             options: ['Extremely concerned', 'Very concerned', 'Moderately concerned', 'Slightly concerned', 'Not concerned']
         },
         {
             id: 'q7',
-            text: 'Can AI adequately consider the unique circumstances of individual cases?',
+            text: 'Can blockchain adequately protect sensitive personal property information?',
             options: ['Definitely yes', 'Probably yes', 'Unsure', 'Probably no', 'Definitely no']
         },
         {
             id: 'q8',
-            text: 'Should AI-assisted decisions in tribunals require mandatory human review?',
+            text: 'Should property transactions on blockchain require government verification?',
             options: ['Always required', 'Usually required', 'Sometimes required', 'Rarely required', 'Not required']
         },
         {
             id: 'q9',
-            text: 'How important is the right to a hearing before a human adjudicator in administrative matters?',
+            text: 'How important is the immutability (unchangeable records) feature of blockchain for land registries?',
             options: ['Extremely important', 'Very important', 'Moderately important', 'Slightly important', 'Not important']
         },
         {
             id: 'q10',
-            text: 'Would you trust an AI system to make fair decisions in administrative disputes?',
+            text: 'Would you trust a blockchain-based land registry system over traditional systems?',
             options: ['Completely trust', 'Mostly trust', 'Neutral', 'Mostly distrust', 'Completely distrust']
         },
         {
             id: 'q11',
-            text: 'Should AI be used only for preliminary case assessment and categorization, not final decisions?',
-            options: ['Strongly agree', 'Agree', 'Neutral', 'Disagree', 'Strongly disagree']
+            text: 'Should blockchain land registries be public (transparent) or private (permissioned)?',
+            options: ['Fully public', 'Mostly public', 'Hybrid approach', 'Mostly private', 'Fully private']
         },
         {
             id: 'q12',
-            text: 'How transparent should AI decision-making processes be in administrative tribunals?',
-            options: ['Completely transparent', 'Mostly transparent', 'Somewhat transparent', 'Minimally transparent', 'Not transparent']
+            text: 'How would blockchain impact the cost of property transactions?',
+            options: ['Significantly reduce', 'Somewhat reduce', 'No change', 'Somewhat increase', 'Significantly increase']
         },
         {
             id: 'q13',
-            text: 'Do you believe AI could reduce bias and inconsistency in tribunal decisions?',
-            options: ['Strongly agree', 'Agree', 'Neutral', 'Disagree', 'Strongly disagree']
+            text: 'Do existing legal frameworks adequately address blockchain-based property rights?',
+            options: ['Completely adequate', 'Mostly adequate', 'Neutral', 'Mostly inadequate', 'Completely inadequate']
         },
         {
             id: 'q14',
-            text: 'What is more important in administrative tribunals?',
-            options: ['Efficiency and speed', 'Due process and fairness', 'Both equally important', 'Neither is priority', 'Depends on case type']
+            text: 'What is the biggest barrier to implementing blockchain land registries?',
+            options: ['Technical complexity', 'Legal/regulatory issues', 'Cost of implementation', 'Lack of public trust', 'Government resistance']
         },
         {
             id: 'q15',
-            text: 'Overall, do you support the integration of AI in administrative tribunals?',
+            text: 'Overall, do you support blockchain implementation in land registration systems?',
             options: ['Strongly support', 'Support', 'Neutral', 'Oppose', 'Strongly oppose']
         }
     ];
 
-    const colors = ['#134e5e', '#1f7a8c', '#71b280', '#8bc34a', '#4db6ac'];
+    const colors = ['#1a472a', '#2d5a3d', '#4a7c59', '#66a876', '#81c784'];
 
     function initForm() {
         const container = document.getElementById('questionsContainer');
@@ -504,7 +504,7 @@
 
     function validateForm() {
         let isValid = true;
-        const personalFields = ['age', 'gender', 'occupation', 'education', 'tribunalExperience'];
+        const personalFields = ['age', 'gender', 'occupation', 'education', 'propertyExperience'];
         
         personalFields.forEach(field => {
             const el = document.getElementById(field);
@@ -541,7 +541,7 @@
             gender: document.getElementById('gender').value,
             occupation: document.getElementById('occupation').value,
             education: document.getElementById('education').value,
-            tribunalExperience: document.getElementById('tribunalExperience').value
+            propertyExperience: document.getElementById('propertyExperience').value
         };
 
         questions.forEach(q => {
@@ -551,7 +551,7 @@
 
         const responses = loadResponses();
         responses.push(formData);
-        sessionStorage.setItem('tribunal_responses', JSON.stringify(responses));
+        sessionStorage.setItem('blockchain_land_responses', JSON.stringify(responses));
 
         document.getElementById('formScreen').classList.add('hidden');
         
@@ -563,7 +563,7 @@
     }
 
     function loadResponses() {
-        const stored = sessionStorage.getItem('tribunal_responses');
+        const stored = sessionStorage.getItem('blockchain_land_responses');
         return stored ? JSON.parse(stored) : [];
     }
 
